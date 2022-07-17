@@ -1,0 +1,24 @@
+2022-07-03 21:42:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "messages" not found; SQL statement:
+INSERT INTO "messages" ("TEXT") VALUES (?) [42102-200]
+2022-07-03 21:51:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "messages" not found; SQL statement:
+INSERT INTO "messages" ("TEXT") VALUES (?) [42102-200]
+2022-07-03 22:00:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MESSAGES" already exists; SQL statement:
+CREATE TABLE messages ( id VARCHAR(60) DEFAULT RANDOM_UUID() PRIMARY KEY, text VARCHAR NOT NULL ) [42101-200]
+2022-07-03 22:03:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "messages" not found; SQL statement:
+INSERT INTO "messages" ("TEXT") VALUES (?) [42102-200]
+2022-07-03 22:04:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE MESSAGES IF[*] NOT EXISTS ( ID VARCHAR(60) DEFAULT RANDOM_UUID() PRIMARY KEY, TEXT VARCHAR NOT NULL )"; SQL statement:
+CREATE TABLE messages IF NOT EXISTS ( id VARCHAR(60) DEFAULT RANDOM_UUID() PRIMARY KEY, text VARCHAR NOT NULL ) [42000-200]
+2022-07-03 22:04:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MESSAGES" already exists; SQL statement:
+CREATE TABLE messages ( id VARCHAR(60) DEFAULT RANDOM_UUID() PRIMARY KEY, text VARCHAR NOT NULL ) [42101-200]
+2022-07-03 22:06:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MESSAGES" already exists; SQL statement:
+CREATE TABLE messages ( id VARCHAR(60) DEFAULT RANDOM_UUID() PRIMARY KEY, text VARCHAR NOT NULL ) [42101-200]
+2022-07-03 22:09:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "messages" not found; SQL statement:
+INSERT INTO "messages" ("TEXT") VALUES (?) [42102-200]
